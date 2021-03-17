@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class FetchWithClassComponent extends Component {
+class FetchWithClassComponentUngrouped extends Component {
 
     state = {
         titles: [],
@@ -12,7 +12,7 @@ class FetchWithClassComponent extends Component {
             .then(response => response.json())
             .then(json =>
                 this.setState({
-                    // state: json.data
+                    // titles: json.data
                     titles: json.data.map(element => element.title),
                     imagesOriginalUrls: json.data.map(element => element.images.original.url)
             })
@@ -29,4 +29,4 @@ class FetchWithClassComponent extends Component {
     }
 }
 
-export default FetchWithClassComponent
+export default FetchWithClassComponentUngrouped

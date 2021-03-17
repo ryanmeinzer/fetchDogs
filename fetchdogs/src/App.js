@@ -1,11 +1,15 @@
 import './App.css'
-import FetchWithClassComponent from './FetchWithClassComponent'
+import FetchWithClassComponentUngrouped from './FetchWithClassComponentUngrouped'
+import FetchWithClassComponentGrouped from './FetchWithClassComponentGrouped'
+import FetchWithClassComponentGroupedComponents from './FetchWithClassComponentGroupedComponents'
 
 function App() {
   return (
     <>
       <h1>Fetch Dogs</h1>
-      <FetchWithClassComponent />
+      {/* <FetchWithClassComponentUngrouped /> */}
+      {/* <FetchWithClassComponentGrouped /> */}
+      <FetchWithClassComponentGroupedComponents />
     </>
   )
 }
