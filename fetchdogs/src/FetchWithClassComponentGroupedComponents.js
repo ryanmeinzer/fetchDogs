@@ -9,6 +9,7 @@ class FetchWithClassComponentGroupedComponents extends Component {
     }
 
     componentDidMount() {
+        // fetch('./data.json')
         fetch('https://api.giphy.com/v1/gifs/search?q=dogs&api_key=cwxQISXRJJ5EO5nAW0kfohP1RSmK2PSE&rating=g')
             .then(response => response.json())
             .then(json =>
@@ -17,6 +18,7 @@ class FetchWithClassComponentGroupedComponents extends Component {
             })
         )
     }
+
     render() {
         return (
             <>
