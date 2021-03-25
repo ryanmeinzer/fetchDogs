@@ -21,7 +21,6 @@ class FetchWithClassComponentUngrouped extends Component {
     render() {
         return (
             <>
-                {/* {this.state.titles.map(element => <div>{element.title}</div>)} */}
                 {this.state.titles.map(element => <div>{element}</div>)}
                 {this.state.imagesOriginalUrls.map(element => <img key={element} src={`${element}`} alt="loading" />)}
             </>

@@ -20,6 +20,10 @@ class DogsClassContainerComponent extends Component {
 
     render() {
         return (
+            // for this to work, state cannot initally be null as render will occur before ComponentDidMount
+            // <>
+            //     {Object.values(this.state.dogs[0])[0]}
+            // </>
             <DogsFunctionalPresentationalParentComponent dogs={this.state.dogs}/>
         )
     }
