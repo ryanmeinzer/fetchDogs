@@ -5,7 +5,7 @@ import DogsFunctionalPresentationalParentComponent from './DogsFunctionalPresent
 class DogsClassContainerComponent extends Component {
     state = {
         dogs: [],
-        loading: false
+        // loading: false
     }
 
     componentDidMount() {
@@ -16,7 +16,7 @@ class DogsClassContainerComponent extends Component {
             .then(json =>
                 this.setState({
                     dogs: json.data,
-                    loading: false
+                    // loading: false
                 })
             )
     }
@@ -32,7 +32,7 @@ class DogsClassContainerComponent extends Component {
 
     render() {
         return (
-            // for either of these to work, state cannot initally be null as render will occur before ComponentDidMount
+            // for either of these to work, state cannot initally be null as Object.values() conversion will occur before ComponentDidMount
             // <>
             //     {this.handleLoading()}
             //     {Object.values(this.state.dogs[0])[0]}
